@@ -17,7 +17,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  background-image: url(../assets/images/_51768-59.jpg); 
+  background-image: url(../../src/assets/images/_51768-59.jpg); 
   background-size: cover;
   background-repeat: no-repeat; 
 
