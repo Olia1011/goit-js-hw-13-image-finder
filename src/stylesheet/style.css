@@ -1,0 +1,135 @@
+@import './libs/normalize.css';
+@import './fonts.css';
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background-image: url(../assets/images/_51768-59.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+​img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.search-input {
+  margin-top: 15px;
+  margin-left: 13px;
+  padding-left: 10px;
+  width: 410px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 15px;
+} 
+
+.btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: hsl(212, 83%, 15%);
+  text-shadow: rgba(255,255,255,.5) 0 -1px 0, rgba(0,0,0,.2) 0 .18em .15em;
+  text-decoration: none;
+  user-select: none;
+  margin: .5em;
+  padding: .5em .6em .4em .6em;
+  border-radius: 8px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  outline: none;
+  background: #b6eeff radial-gradient(rgba(255,255,255,0), rgba(255,255,255,.5));
+  box-shadow:
+  inset rgba(255,255,255,.6) 0 .3em .3em,
+  inset rgba(0,0,0,.2) 0 -.1em .3em,
+  rgb(155, 176, 179) 0 7px 1px,
+  rgba(0,0,0,.2) 0 .5em 5px;
+  transition: background .2s ease-in-out;
+  }
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(184, 71%, 47%);
+  }
+
+.btn:active {
+    top: .2em;
+    color: rgba(254,255,255,.9);
+    text-shadow: rgba(0,0,0,.2) 0 1px 2px;
+    box-shadow:
+     inset rgba(255,255,255,.6) 0 .3em .3em,
+     inset rgba(0,0,0,.2) 0 -.1em .3em,
+     rgba(0,0,0,.4) 0 .1em 1px,
+     rgba(0,0,0,.3) 0 .2em 6px;
+  }
+
+.btn:after {
+    content:  "";
+    position:  absolute; 
+    width:   90%;
+    height:  60%;
+    top:   0;
+    left:   5%;    
+    border-radius:    .5em .5em 1em 1em / .5em .5em 2em 2em;
+    background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.3)); 
+  }
+
+.btn:active:after {
+    opacity: .6;
+  }
+
+.btn:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.stats-item {
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+
+
+
