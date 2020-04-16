@@ -2,6 +2,7 @@ import apiService from '../../services/apiService';
 import collectionElement from '../../templates/picture.hbs';
 import debounce from 'lodash.debounce';
 import scroll from'./scroll';
+import 'basiclightbox/dist/basicLightbox.min.css';
 
 const refs = {
   collection: document.querySelector('.gallery'),
@@ -13,6 +14,7 @@ const refs = {
 
 refs.query.addEventListener('input', debounce(search, 300));
 refs.btn.addEventListener('click', loadMoreBtnHandler);
+refs.collection.addEventListener('click', showModalWindow);
 
 function search(e) {
   e.preventDefault();
@@ -36,4 +38,14 @@ function clearListItems() {
   refs.collection.innerHTML = '';
 }
 
+// function showModalWindow(e) {
+//   console.log(e.target);
+//   if(e.target.nodeName === 'IMG') {
+//     const largeImageURL = e.target.dataset.action;
+//     basicLightbox
+//     .create(
+//       <img width-"800" heigth-'500' src=${largeImageURL}>
+//     )
+//   }
+// }
 
